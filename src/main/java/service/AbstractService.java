@@ -12,8 +12,6 @@ public abstract class AbstractService {
 	
 	private HttpHelper helper;
 	
-	
-
 	public AbstractService() {
 		super();
 		helper = new HttpHelper();

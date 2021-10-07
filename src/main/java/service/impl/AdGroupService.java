@@ -20,7 +20,7 @@ import model.Adgroup;
 import service.AbstractService;
 import utils.FunctionHelper;
 
-public class AdGroupService extends AbstractService{
+public class AdgroupService extends AbstractService{
 
 	public JSONArray getDataAdgroup(String accessToken, Long advertiserId) {
 		String path = "/open_api/v1.2/adgroup/get/";

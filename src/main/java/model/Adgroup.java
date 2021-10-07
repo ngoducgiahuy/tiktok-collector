@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -232,5 +233,24 @@ public class Adgroup {
 				+ optStatus + ", scheduleStartTime: " + scheduleStartTime + ", scheduleEndTime: " + scheduleEndTime + ", createTime: "
 				+ createTime + ", modifyTime: " + modifyTime + ", age: " + age + ", gender: "
 				+ gender + ", languages: " + languages + ", location: " + location;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Adgroup other = (Adgroup) obj;
+		return Objects.equals(other.adgroupId, adgroupId) && Objects.equals(other.adgroupName, adgroupName)
+				&& Objects.equals(other.advertiserId, advertiserId) && Objects.equals(other.age, age)
+				&& Objects.equals(other.campaignId, campaignId) && Objects.equals(other.campaignName, campaignName)
+				&& Objects.equals(other.createTime, createTime) && Objects.equals(other.gender, gender)
+				&& Objects.equals(other.modifyTime, modifyTime) && Objects.equals(other.languages, languages)
+				&& Objects.equals(other.location, location)
+				&& Objects.equals(other.optStatus, optStatus) && Objects.equals(other.scheduleEndTime, scheduleEndTime)
+				&& Objects.equals(other.scheduleStartTime, scheduleStartTime) && Objects.equals(other.status, status);
 	}
 }

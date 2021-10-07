@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -216,6 +217,25 @@ public class Campaign {
 				+ optStatus + ", objective: " + objective + ", objectiveType: " + objectiveType + ", createTime: "
 				+ createTime + ", modifyTime: " + modifyTime + ", budgetOptimize: " + budgetOptimize + ", bidType: "
 				+ bidType + ", optimizeGoal: " + optimizeGoal;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Campaign other = (Campaign) obj;
+		return Objects.equals(other.advertiserId, advertiserId) && Objects.equals(other.bidType, bidType)
+				&& Objects.equals(other.budget, budget) && Objects.equals(other.budgetMode, budgetMode)
+				&& Objects.equals(other.budgetOptimize, budgetOptimize) && Objects.equals(other.campaignId, campaignId)
+				&& Objects.equals(other.campaignName, campaignName) && Objects.equals(other.createTime, createTime)
+				&& Objects.equals(other.modifyTime, modifyTime) && Objects.equals(other.objective, objective)
+				&& Objects.equals(other.objectiveType, objectiveType)
+				&& Objects.equals(other.optimizeGoal, optimizeGoal) && Objects.equals(other.optStatus, optStatus)
+				&& Objects.equals(other.status, status);
 	}
 
 }
