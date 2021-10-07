@@ -19,9 +19,9 @@ import dto.AdDto;
 import model.Ad;
 import service.AbstractService;
 
-public class AdService extends AbstractService{
+public class AdService extends AbstractService {
 
-	public JSONArray getDataAd(String accessToken, Long advertiserId){
+	public JSONArray getDataAd(String accessToken, Long advertiserId) {
 		String path = "/open_api/v1.2/ad/get/";
 		List<String> fieldList = new ArrayList<String>();
 		fieldList.add("advertiser_id");
@@ -34,12 +34,13 @@ public class AdService extends AbstractService{
 		fieldList.add("ad_text");
 		fieldList.add("ad_format");
 		fieldList.add("status");
-		fieldList.add("opt_status");	
+		fieldList.add("opt_status");
 		fieldList.add("app_name");
 		return getListWithAllData(path, accessToken, advertiserId, fieldList);
 	}
-	
-	public void importData(String accessToken, Long advertiserId, Session session) throws JsonMappingException, JsonProcessingException{
+
+	public void importData(String accessToken, Long advertiserId, Session session)
+			throws JsonMappingException, JsonProcessingException {
 		JSONArray resultList = this.getDataAd(accessToken, advertiserId);
 		for (Object ad : resultList) {
 			AdDto adDto = convertToDto(ad);
@@ -47,17 +48,18 @@ public class AdService extends AbstractService{
 			session.saveOrUpdate(adEntity);
 		}
 	}
-	
-	public AdDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException{
+
+	public AdDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException {
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.registerModule(new JavaTimeModule());
 		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-		mapper.setVisibility(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
+		mapper.setVisibility(
+				VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
 		AdDto adgroupDto = mapper.readValue(obj.toString(), AdDto.class);
 		return adgroupDto;
 	}
-	
-	public Ad convertToEntity (AdDto adDto) {
+
+	public Ad convertToEntity(AdDto adDto) {
 		ModelMapper mapper = new ModelMapper();
 		Ad adModel = mapper.map(adDto, Ad.class);
 		return adModel;

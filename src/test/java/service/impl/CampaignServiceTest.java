@@ -36,17 +36,19 @@ public class CampaignServiceTest {
 			+ "\"campaign_id\": 1711095423090689"
 			+ "}";
 	JSONObject objectTest = new JSONObject(jsonString);
-	CampaignDto campaignDtoTest = new CampaignDto(1711095423090689L, 6791983391823626245L, "[OPTIMIZER REGRESSION] Impressions 2"
-			, 50.0, "BUDGET_MODE_TOTAL", "CAMPAIGN_STATUS_DISABLE", "DISABLE", null, null, null, null, null, null, null);
-	Campaign campaignTest = new Campaign(1711095423090689L, 6791983391823626245L, "[OPTIMIZER REGRESSION] Impressions 2"
-			, 50.0, "BUDGET_MODE_TOTAL", "CAMPAIGN_STATUS_DISABLE", "DISABLE", null, null, null, null, null, null, null);
-	
+	CampaignDto campaignDtoTest = new CampaignDto(1711095423090689L, 6791983391823626245L,
+			"[OPTIMIZER REGRESSION] Impressions 2", 50.0, "BUDGET_MODE_TOTAL", "CAMPAIGN_STATUS_DISABLE", "DISABLE",
+			null, null, null, null, null, null, null);
+	Campaign campaignTest = new Campaign(1711095423090689L, 6791983391823626245L,
+			"[OPTIMIZER REGRESSION] Impressions 2", 50.0, "BUDGET_MODE_TOTAL", "CAMPAIGN_STATUS_DISABLE", "DISABLE",
+			null, null, null, null, null, null, null);
+
 	@Test
 	public void convertToDto_Success() throws JsonMappingException, JsonProcessingException {
 		CampaignDto campaignDto = campaignService.convertToDto(objectTest);
 		assertEquals(campaignDto.getAdvertiserId(), campaignDtoTest.getAdvertiserId());
 	}
-	
+
 	@Test
 	public void convertToEntity_Success() {
 		Campaign campaign = campaignService.convertToEntity(campaignDtoTest);

@@ -207,7 +207,6 @@ public class Campaign {
 
 	public Campaign() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

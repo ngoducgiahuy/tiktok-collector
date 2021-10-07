@@ -20,7 +20,7 @@ import model.Adgroup;
 import service.AbstractService;
 import utils.FunctionHelper;
 
-public class AdgroupService extends AbstractService{
+public class AdgroupService extends AbstractService {
 
 	public JSONArray getDataAdgroup(String accessToken, Long advertiserId) {
 		String path = "/open_api/v1.2/adgroup/get/";
@@ -42,8 +42,9 @@ public class AdgroupService extends AbstractService{
 		fieldList.add("location");
 		return getListWithAllData(path, accessToken, advertiserId, fieldList);
 	}
-	
-	public void importData(String accessToken, Long advertiserId, Session session) throws JsonMappingException, JsonProcessingException{
+
+	public void importData(String accessToken, Long advertiserId, Session session)
+			throws JsonMappingException, JsonProcessingException {
 		JSONArray resultList = this.getDataAdgroup(accessToken, advertiserId);
 		for (Object adgroup : resultList) {
 			AdgroupDto adgroupDto = convertToDto(adgroup);
@@ -52,17 +53,18 @@ public class AdgroupService extends AbstractService{
 		}
 
 	}
-	
-	public AdgroupDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException{
+
+	public AdgroupDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException {
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.registerModule(new JavaTimeModule());
 		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-		mapper.setVisibility(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
+		mapper.setVisibility(
+				VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
 		AdgroupDto adgroupDto = mapper.readValue(obj.toString(), AdgroupDto.class);
 		return adgroupDto;
 	}
-	
-	public Adgroup convertToEntity (AdgroupDto adgroupDto) {
+
+	public Adgroup convertToEntity(AdgroupDto adgroupDto) {
 		ModelMapper mapper = new ModelMapper();
 		Adgroup adgroupModel = mapper.map(adgroupDto, Adgroup.class);
 		adgroupModel.setAge(FunctionHelper.convertArrayToString(adgroupDto.getAge()));

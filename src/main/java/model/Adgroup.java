@@ -18,7 +18,7 @@ public class Adgroup {
 	@Column(name = "adgroup_id")
 	@JsonProperty(value = "adgroup_id")
 	private Long adgroupId;
-	
+
 	@Column(name = "advertiser_id")
 	@JsonProperty(value = "advertiser_id")
 	private Long advertiserId;
@@ -206,8 +206,8 @@ public class Adgroup {
 
 	public Adgroup(Long adgroupId, Long advertiserId, Long campaignId, String campaignName, String adgroupName,
 			String status, String optStatus, LocalDateTime createTime, LocalDateTime modifyTime,
-			LocalDateTime scheduleStartTime, LocalDateTime scheduleEndTime, String age, String gender,
-			String languages, String location) {
+			LocalDateTime scheduleStartTime, LocalDateTime scheduleEndTime, String age, String gender, String languages,
+			String location) {
 		super();
 		this.adgroupId = adgroupId;
 		this.advertiserId = advertiserId;
@@ -225,16 +225,16 @@ public class Adgroup {
 		this.languages = languages;
 		this.location = location;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "adgroupId: " + adgroupId + ", advertiserId: " + advertiserId + ", campaignId: " + campaignId
-				+ ", campaignName: " + campaignName + ", adgroupName: " + adgroupName + ", status: " + status + ", optStatus: "
-				+ optStatus + ", scheduleStartTime: " + scheduleStartTime + ", scheduleEndTime: " + scheduleEndTime + ", createTime: "
-				+ createTime + ", modifyTime: " + modifyTime + ", age: " + age + ", gender: "
-				+ gender + ", languages: " + languages + ", location: " + location;
+				+ ", campaignName: " + campaignName + ", adgroupName: " + adgroupName + ", status: " + status
+				+ ", optStatus: " + optStatus + ", scheduleStartTime: " + scheduleStartTime + ", scheduleEndTime: "
+				+ scheduleEndTime + ", createTime: " + createTime + ", modifyTime: " + modifyTime + ", age: " + age
+				+ ", gender: " + gender + ", languages: " + languages + ", location: " + location;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -249,8 +249,8 @@ public class Adgroup {
 				&& Objects.equals(other.campaignId, campaignId) && Objects.equals(other.campaignName, campaignName)
 				&& Objects.equals(other.createTime, createTime) && Objects.equals(other.gender, gender)
 				&& Objects.equals(other.modifyTime, modifyTime) && Objects.equals(other.languages, languages)
-				&& Objects.equals(other.location, location)
-				&& Objects.equals(other.optStatus, optStatus) && Objects.equals(other.scheduleEndTime, scheduleEndTime)
+				&& Objects.equals(other.location, location) && Objects.equals(other.optStatus, optStatus)
+				&& Objects.equals(other.scheduleEndTime, scheduleEndTime)
 				&& Objects.equals(other.scheduleStartTime, scheduleStartTime) && Objects.equals(other.status, status);
 	}
 }

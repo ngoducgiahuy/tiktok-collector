@@ -184,7 +184,6 @@ public class CampaignDto {
 
 	public CampaignDto() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

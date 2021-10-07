@@ -2,7 +2,6 @@ package dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-
 public class AdDto {
 	@JsonProperty(value = "ad_id")
 	private Long adId;
@@ -15,28 +14,28 @@ public class AdDto {
 
 	@JsonProperty(value = "campaign_id")
 	private Long campaignId;
-	
+
 	@JsonProperty(value = "campaign_name")
 	private String campaignName;
-	
+
 	@JsonProperty(value = "adgroup_id")
 	private Long adgroupId;
-	
+
 	@JsonProperty(value = "adgroup_name")
 	private String adgroupName;
-	
+
 	@JsonProperty(value = "ad_text")
 	private String adText;
-	
+
 	@JsonProperty(value = "ad_format")
 	private String adFormat;
-	
+
 	@JsonProperty(value = "status")
 	private String status;
-	
+
 	@JsonProperty(value = "opt_status")
 	private String optStatus;
-	
+
 	@JsonProperty(value = "app_name")
 	private String appName;
 
@@ -155,9 +154,6 @@ public class AdDto {
 
 	public AdDto() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-	
-	
 
 }

@@ -5,11 +5,10 @@ import java.time.LocalDateTime;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-
 public class AdgroupDto {
 	@JsonProperty(value = "adgroup_id")
 	private Long adgroupId;
-	
+
 	@JsonProperty(value = "advertiser_id")
 	private Long advertiserId;
 
@@ -178,7 +177,6 @@ public class AdgroupDto {
 
 	public AdgroupDto() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public AdgroupDto(Long adgroupId, Long advertiserId, Long campaignId, String campaignName, String adgroupName,
@@ -202,13 +200,13 @@ public class AdgroupDto {
 		this.languages = languages;
 		this.location = location;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "adgroupId: " + adgroupId + ", advertiserId: " + advertiserId + ", campaignId: " + campaignId
-				+ ", campaignName: " + campaignName + ", adgroupName: " + adgroupName + ", status: " + status + ", optStatus: "
-				+ optStatus + ", scheduleStartTime: " + scheduleStartTime + ", scheduleEndTime: " + scheduleEndTime + ", createTime: "
-				+ createTime + ", modifyTime: " + modifyTime + ", age: " + age + ", gender: "
-				+ gender + ", languages: " + languages + ", location: " + location;
+				+ ", campaignName: " + campaignName + ", adgroupName: " + adgroupName + ", status: " + status
+				+ ", optStatus: " + optStatus + ", scheduleStartTime: " + scheduleStartTime + ", scheduleEndTime: "
+				+ scheduleEndTime + ", createTime: " + createTime + ", modifyTime: " + modifyTime + ", age: " + age
+				+ ", gender: " + gender + ", languages: " + languages + ", location: " + location;
 	}
 }
