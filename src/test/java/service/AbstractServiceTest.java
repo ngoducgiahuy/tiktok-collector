@@ -12,20 +12,15 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import service.impl.CampaignService;
-import utils.HttpHelper;
 
 @ExtendWith(MockitoExtension.class)
 public class AbstractServiceTest {
 	String token = "8fc7854be9412a39df88a761e22461ab875696fe";
 	Long advertiserId = 6791983391823626245L;
 	String PATH = "/open_api/v1.2/campaign/get/";
-
-	@Mock
-	HttpHelper helper;
 
 	CampaignService campaignService = new CampaignService();
 
@@ -68,7 +63,6 @@ public class AbstractServiceTest {
 		when(campaignService.getData(PATH, token, advertiserId, 2, 20, fields)).thenReturn(objectResponse);
 
 		JSONArray arrResult = campaignService.getListWithAllData(PATH, token, advertiserId, fieldList);
-		System.out.println(arrResult);
 		assertEquals(arrResult.length(), 2);
 	}
 }

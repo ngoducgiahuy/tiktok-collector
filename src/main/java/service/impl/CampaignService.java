@@ -10,7 +10,6 @@ import org.modelmapper.ModelMapper;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -42,7 +41,7 @@ public class CampaignService extends AbstractService {
 	}
 
 	public void importData(String accessToken, Long advertiserId, Session session)
-			throws JsonMappingException, JsonProcessingException {
+			throws JsonProcessingException {
 		JSONArray resultList = this.getDataCampaign(accessToken, advertiserId);
 		for (Object camp : resultList) {
 			CampaignDto campaignDto = convertToDto(camp);
@@ -51,7 +50,7 @@ public class CampaignService extends AbstractService {
 		}
 	}
 
-	public CampaignDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException {
+	public CampaignDto convertToDto(Object obj) throws JsonProcessingException {
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.registerModule(new JavaTimeModule());
 		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
