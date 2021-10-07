@@ -1,7 +1,5 @@
 package service.impl;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +17,11 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import dto.AdDto;
 import model.Ad;
-import service.EntityService;
+import service.AbstractService;
 
-public class AdService implements EntityService{
-	public JSONArray getDataAd(String accessToken, Long advertiserId)
-			throws IOException, URISyntaxException {
+public class AdService extends AbstractService{
+
+	public JSONArray getDataAd(String accessToken, Long advertiserId){
 		String path = "/open_api/v1.2/ad/get/";
 		List<String> fieldList = new ArrayList<String>();
 		fieldList.add("advertiser_id");
@@ -38,11 +36,10 @@ public class AdService implements EntityService{
 		fieldList.add("status");
 		fieldList.add("opt_status");	
 		fieldList.add("app_name");
-		return this.getListWithAllData(path, accessToken, advertiserId, fieldList);
+		return getListWithAllData(path, accessToken, advertiserId, fieldList);
 	}
 	
-	public void importData(String accessToken, Long advertiserId, Session session)
-			throws IOException, URISyntaxException {
+	public void importData(String accessToken, Long advertiserId, Session session) throws JsonMappingException, JsonProcessingException{
 		JSONArray resultList = this.getDataAd(accessToken, advertiserId);
 		for (Object ad : resultList) {
 			AdDto adDto = convertToDto(ad);
@@ -51,7 +48,7 @@ public class AdService implements EntityService{
 		}
 	}
 	
-	public AdDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException {
+	public AdDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException{
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.registerModule(new JavaTimeModule());
 		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);

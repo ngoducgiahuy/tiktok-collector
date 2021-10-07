@@ -1,7 +1,5 @@
 package service.impl;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,12 +17,11 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import dto.CampaignDto;
 import model.Campaign;
-import service.EntityService;
+import service.AbstractService;
 
-public class CampaignService implements EntityService {
+public class CampaignService extends AbstractService{
 
-	public JSONArray getDataCampaign(String accessToken, Long advertiserId)
-			throws IOException, URISyntaxException {
+	public JSONArray getDataCampaign(String accessToken, Long advertiserId){
 		String path = "/open_api/v1.2/campaign/get/";
 		List<String> fieldList = new ArrayList<String>();
 		fieldList.add("advertiser_id");
@@ -41,11 +38,10 @@ public class CampaignService implements EntityService {
 		fieldList.add("budget_optimize_switch");
 		fieldList.add("bid_type");
 		fieldList.add("optimize_goal");
-		return this.getListWithAllData(path, accessToken, advertiserId, fieldList);
+		return getListWithAllData(path, accessToken, advertiserId, fieldList);
 	}
 
-	public void importData(String accessToken, Long advertiserId, Session session)
-			throws IOException, URISyntaxException {
+	public void importData(String accessToken, Long advertiserId, Session session) throws JsonMappingException, JsonProcessingException{
 		JSONArray resultList = this.getDataCampaign(accessToken, advertiserId);
 		for (Object camp : resultList) {
 			CampaignDto campaignDto = convertToDto(camp);

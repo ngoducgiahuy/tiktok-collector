@@ -1,7 +1,5 @@
 package service;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,18 +8,25 @@ import org.json.JSONObject;
 
 import utils.HttpHelper;
 
-public interface EntityService {
-	public default JSONObject getData(String path, String accessToken, Long advertiserId, int page, int pageSize, String fields)
-			throws IOException, URISyntaxException {
-		HttpHelper helper = new HttpHelper(accessToken, path);
+public abstract class AbstractService {
+	
+	private HttpHelper helper;
+	
+	
+
+	public AbstractService() {
+		super();
+		helper = new HttpHelper();
+	}
+
+	public JSONObject getData(String path, String accessToken, Long advertiserId, int page, int pageSize, String fields) {
 		String myArgs = String.format("{\"advertiser_id\": \"%s\", \"fields\": [%s], \"page\": \"%s\", \"page_size\": \"%s\"}",
 				advertiserId, fields, page, pageSize);
-		JSONObject objResult = new JSONObject(helper.get(myArgs));
+		JSONObject objResult = new JSONObject(helper.get(myArgs, path, accessToken));
 		return objResult;
 	}
 
-	public default JSONArray getListWithAllData(String path, String accessToken, Long advertiserId, List<String> fieldList)
-			throws IOException, URISyntaxException {
+	public JSONArray getListWithAllData(String path, String accessToken, Long advertiserId, List<String> fieldList){
 		int page = 1;
 		int pageSize = 20;
         String fields = fieldList.stream().map(s -> String.format("\"%s\"", s)).collect(Collectors.joining(", "));
@@ -38,5 +43,4 @@ public interface EntityService {
 		}
 		return listRecord;
 	}
-
 }

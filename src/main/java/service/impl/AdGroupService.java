@@ -1,7 +1,5 @@
 package service.impl;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,13 +17,12 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import dto.AdgroupDto;
 import model.Adgroup;
-import service.EntityService;
+import service.AbstractService;
 import utils.FunctionHelper;
 
-public class AdGroupService implements EntityService {
-	
-	public JSONArray getDataAdgroup(String accessToken, Long advertiserId)
-			throws IOException, URISyntaxException {
+public class AdGroupService extends AbstractService{
+
+	public JSONArray getDataAdgroup(String accessToken, Long advertiserId) {
 		String path = "/open_api/v1.2/adgroup/get/";
 		List<String> fieldList = new ArrayList<String>();
 		fieldList.add("advertiser_id");
@@ -43,22 +40,20 @@ public class AdGroupService implements EntityService {
 		fieldList.add("gender");
 		fieldList.add("languages");
 		fieldList.add("location");
-		return this.getListWithAllData(path, accessToken, advertiserId, fieldList);
+		return getListWithAllData(path, accessToken, advertiserId, fieldList);
 	}
 	
-	public void importData(String accessToken, Long advertiserId, Session session)
-			throws IOException, URISyntaxException {
+	public void importData(String accessToken, Long advertiserId, Session session) throws JsonMappingException, JsonProcessingException{
 		JSONArray resultList = this.getDataAdgroup(accessToken, advertiserId);
 		for (Object adgroup : resultList) {
 			AdgroupDto adgroupDto = convertToDto(adgroup);
 			Adgroup adgroupEntity = convertToEntity(adgroupDto);
-			System.out.println(adgroupEntity);
 			session.saveOrUpdate(adgroupEntity);
 		}
 
 	}
 	
-	public AdgroupDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException {
+	public AdgroupDto convertToDto(Object obj) throws JsonMappingException, JsonProcessingException{
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.registerModule(new JavaTimeModule());
 		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
