@@ -893,3 +893,840 @@
 2021-10-07 18:23:30 DEBUG AbstractServiceRegistryImpl:419 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
 2021-10-07 18:23:30 INFO  pooling:502 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/ojt]
 2021-10-07 18:23:30 DEBUG BootstrapServiceRegistryImpl:295 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2021-10-08 09:28:39 DEBUG logging:44 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2021-10-08 09:28:39 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-10-08 09:28:39 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-10-08 09:28:39 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-10-08 09:28:39 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.5.6
+2021-10-08 09:28:39 DEBUG Environment:199 - HHH000206: hibernate.properties not found
+2021-10-08 09:28:40 DEBUG LocalXmlResourceResolver:63 - Interpreting public/system identifier : [null] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2021-10-08 09:28:40 DEBUG LocalXmlResourceResolver:91 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2021-10-08 09:28:40 DEBUG JaxbCfgProcessor:117 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2021-10-08 09:28:40 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-10-08 09:28:40 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-10-08 09:28:40 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-10-08 09:28:40 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@7e6f0d0f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@7e6f0d0f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7e6f0d0f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@230cae2b
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@3c52e0c
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration yes_no -> org.hibernate.type.YesNoType@3235bd91
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@618ec7a6
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@618ec7a6
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@618ec7a6
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration character -> org.hibernate.type.CharacterType@6ea806f3
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration char -> org.hibernate.type.CharacterType@6ea806f3
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6ea806f3
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@3761b5b9
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@3761b5b9
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3761b5b9
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration integer -> org.hibernate.type.IntegerType@75fe5bc2
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration int -> org.hibernate.type.IntegerType@75fe5bc2
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@75fe5bc2
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@22e1f65d
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@22e1f65d
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@22e1f65d
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@5d68cc72
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@5d68cc72
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5d68cc72
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@19ad245c
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@19ad245c
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@19ad245c
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@16448ed
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@16448ed
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2a0c605c
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2a0c605c
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration string -> org.hibernate.type.StringType@166f87c9
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.String -> org.hibernate.type.StringType@166f87c9
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@71705a14
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3cd494c5
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration url -> org.hibernate.type.UrlType@239605bf
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@239605bf
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration Duration -> org.hibernate.type.DurationType@5030628f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5030628f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration Instant -> org.hibernate.type.InstantType@1447e3b1
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1447e3b1
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4d39dc56
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4d39dc56
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@63cf7a81
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@63cf7a81
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3a3e8bbb
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3a3e8bbb
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@53d1c300
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@53d1c300
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@262721ac
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@262721ac
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7aa26540
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7aa26540
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration date -> org.hibernate.type.DateType@5b870c49
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5b870c49
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration time -> org.hibernate.type.TimeType@5d6c0e01
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5d6c0e01
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration timestamp -> org.hibernate.type.TimestampType@65dba80b
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@65dba80b
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@65dba80b
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3ed998c5
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration calendar -> org.hibernate.type.CalendarType@3beeccf0
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3beeccf0
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3beeccf0
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5acf59ea
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@39bc4e0e
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration locale -> org.hibernate.type.LocaleType@667e1de1
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@667e1de1
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration currency -> org.hibernate.type.CurrencyType@760757
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@760757
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@677f77f6
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@677f77f6
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration class -> org.hibernate.type.ClassType@7d4d62e2
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7d4d62e2
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@76379c2e
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@76379c2e
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@929ddcb
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration binary -> org.hibernate.type.BinaryType@4a7bc504
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration byte[] -> org.hibernate.type.BinaryType@4a7bc504
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration [B -> org.hibernate.type.BinaryType@4a7bc504
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@25db9b0f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@25db9b0f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@25db9b0f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration row_version -> org.hibernate.type.RowVersionType@3a6cb3b4
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration image -> org.hibernate.type.ImageType@109c6ba6
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration characters -> org.hibernate.type.CharArrayType@5e61d18b
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration char[] -> org.hibernate.type.CharArrayType@5e61d18b
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration [C -> org.hibernate.type.CharArrayType@5e61d18b
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@133b1106
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@133b1106
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@133b1106
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration text -> org.hibernate.type.TextType@a6b73c0
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration ntext -> org.hibernate.type.NTextType@56a5f561
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration blob -> org.hibernate.type.BlobType@c3ebc94
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@c3ebc94
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6a6d7137
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration clob -> org.hibernate.type.ClobType@3436fae8
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3436fae8
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration nclob -> org.hibernate.type.NClobType@67a89ba7
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@67a89ba7
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@101c9ccf
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4b72b2e0
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration serializable -> org.hibernate.type.SerializableType@50bffbc5
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration object -> org.hibernate.type.ObjectType@291c9f41
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@291c9f41
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@77b0325f
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@163be3ce
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@32788826
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5225b727
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@247155f6
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6d9de725
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1bd27b08
+2021-10-08 09:28:41 DEBUG BasicTypeRegistry:157 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@64317bda
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-08 09:28:41 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-10-08 09:28:42 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-10-08 09:28:42 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-10-08 09:28:42 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-10-08 09:28:42 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-08 09:28:42 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-10-08 09:28:42 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2021-10-08 09:28:42 INFO  pooling:115 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/ojt]
+2021-10-08 09:28:42 INFO  pooling:121 - HHH10001001: Connection properties: {password=H123, user=postgres}
+2021-10-08 09:28:42 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2021-10-08 09:28:42 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2021-10-08 09:28:42 INFO  DriverManagerConnectionProviderImpl:274 - HHH000115: Hibernate connection pool size: 5 (min=1)
+2021-10-08 09:28:42 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : PostgreSQL
+    version : 12.7
+      major : 12
+      minor : 7
+2021-10-08 09:28:42 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.19
+      major : 42
+      minor : 2
+2021-10-08 09:28:42 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2021-10-08 09:28:42 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-08 09:28:42 DEBUG IdentifierHelperBuilder:114 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-10-08 09:28:42 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-10-08 09:28:42 DEBUG BasicTypeRegistry:157 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@541d70a7
+2021-10-08 09:28:42 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@541d70a7
+2021-10-08 09:28:42 DEBUG BasicTypeRegistry:160 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@76379c2e
+2021-10-08 09:28:42 DEBUG TypeConfiguration$Scope:149 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@385d55aa] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@385cda2b]
+2021-10-08 09:28:42 DEBUG AnnotationBinder:558 - Binding entity from annotated class: model.Campaign
+2021-10-08 09:28:42 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-08 09:28:42 DEBUG EntityBinder:431 - Import with entity name Campaign
+2021-10-08 09:28:42 DEBUG EntityBinder:874 - Bind entity model.Campaign on table tk_campaign
+2021-10-08 09:28:42 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=campaign_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [model.Campaign] is safe
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : model.Campaign
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property campaignId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:campaignId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for campaignId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property campaignId
+2021-10-08 09:28:43 DEBUG BinderHelper:643 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(campaign_id)]), campaignId, assigned, , ...)
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=advertiser_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property advertiserId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:advertiserId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for advertiserId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property advertiserId
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=bid_type, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property bidType with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:bidType]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for bidType
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property bidType
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=budget, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property budget with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:budget]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for budget
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property budget
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=budget_mode, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property budgetMode with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:budgetMode]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for budgetMode
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property budgetMode
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=budget_optimize, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property budgetOptimize with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:budgetOptimize]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for budgetOptimize
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property budgetOptimize
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=campaign_name, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property campaignName with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:campaignName]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for campaignName
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property campaignName
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=create_time, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property createTime with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:createTime]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for createTime
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property createTime
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=modify_time, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property modifyTime with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:modifyTime]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for modifyTime
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property modifyTime
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=objective, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property objective with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:objective]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for objective
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property objective
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=objective_type, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property objectiveType with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:objectiveType]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for objectiveType
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property objectiveType
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=opt_status, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property optStatus with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:optStatus]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for optStatus
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property optStatus
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=optimize_goal, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property optimizeGoal with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:optimizeGoal]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for optimizeGoal
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property optimizeGoal
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_campaign), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property status with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Campaign:status]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for status
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property status
+2021-10-08 09:28:43 DEBUG AnnotationBinder:558 - Binding entity from annotated class: model.Adgroup
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-08 09:28:43 DEBUG EntityBinder:431 - Import with entity name Adgroup
+2021-10-08 09:28:43 DEBUG EntityBinder:874 - Bind entity model.Adgroup on table tk_adgroup
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=adgroup_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [model.Adgroup] is safe
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : model.Adgroup
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adgroupId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:adgroupId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adgroupId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adgroupId
+2021-10-08 09:28:43 DEBUG BinderHelper:643 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(adgroup_id)]), adgroupId, assigned, , ...)
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=adgroup_name, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adgroupName with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:adgroupName]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adgroupName
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adgroupName
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=advertiser_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property advertiserId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:advertiserId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for advertiserId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property advertiserId
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=age, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property age with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:age]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for age
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property age
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=campaign_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property campaignId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:campaignId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for campaignId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property campaignId
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=campaign_name, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property campaignName with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:campaignName]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for campaignName
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property campaignName
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=create_time, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property createTime with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:createTime]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for createTime
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property createTime
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=gender, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property gender with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:gender]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for gender
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property gender
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=languages, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property languages with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:languages]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for languages
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property languages
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=location, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property location with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:location]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for location
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property location
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=modify_time, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property modifyTime with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:modifyTime]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for modifyTime
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property modifyTime
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=opt_status, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property optStatus with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:optStatus]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for optStatus
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property optStatus
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=schedule_end_time, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property scheduleEndTime with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:scheduleEndTime]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for scheduleEndTime
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property scheduleEndTime
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=schedule_start_time, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property scheduleStartTime with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:scheduleStartTime]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for scheduleStartTime
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property scheduleStartTime
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_adgroup), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property status with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Adgroup:status]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for status
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property status
+2021-10-08 09:28:43 DEBUG AnnotationBinder:558 - Binding entity from annotated class: model.Ad
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-08 09:28:43 DEBUG EntityBinder:431 - Import with entity name Ad
+2021-10-08 09:28:43 DEBUG EntityBinder:874 - Bind entity model.Ad on table tk_ad
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=ad_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [model.Ad] is safe
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : model.Ad
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:adId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adId
+2021-10-08 09:28:43 DEBUG BinderHelper:643 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(ad_id)]), adId, assigned, , ...)
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=ad_format, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adFormat with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:adFormat]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adFormat
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adFormat
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=ad_name, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adName with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:adName]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adName
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adName
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=ad_text, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adText with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:adText]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adText
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adText
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=adgroup_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adgroupId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:adgroupId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adgroupId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adgroupId
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=adgroup_name, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property adgroupName with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:adgroupName]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for adgroupName
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property adgroupName
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=advertiser_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property advertiserId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:advertiserId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for advertiserId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property advertiserId
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=app_name, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property appName with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:appName]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for appName
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property appName
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=campaign_id, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property campaignId with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:campaignId]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for campaignId
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property campaignId
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=campaign_name, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property campaignName with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:campaignName]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for campaignName
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property campaignName
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=opt_status, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property optStatus with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:optStatus]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for optStatus
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property optStatus
+2021-10-08 09:28:43 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tk_ad), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2021-10-08 09:28:43 DEBUG PropertyBinder:175 - MetadataSourceProcessor property status with lazy=false
+2021-10-08 09:28:43 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [model.Ad:status]
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:410 - building SimpleValue for status
+2021-10-08 09:28:43 DEBUG PropertyBinder:266 - Building property status
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for campaignId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for advertiserId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for bidType
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for budget
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for budgetMode
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for budgetOptimize
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for campaignName
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for createTime
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for modifyTime
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for objective
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for objectiveType
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for optStatus
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for optimizeGoal
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for status
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adgroupId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adgroupName
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for advertiserId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for age
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for campaignId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for campaignName
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for createTime
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for gender
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for languages
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for location
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for modifyTime
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for optStatus
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for scheduleEndTime
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for scheduleStartTime
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for status
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adFormat
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adName
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adText
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adgroupId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for adgroupName
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for advertiserId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for appName
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for campaignId
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for campaignName
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for optStatus
+2021-10-08 09:28:43 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for status
+2021-10-08 09:28:43 DEBUG PrimaryKey:35 - Forcing column [campaign_id] to be non-null as it is part of the primary key for table [tk_campaign]
+2021-10-08 09:28:43 DEBUG PrimaryKey:35 - Forcing column [adgroup_id] to be non-null as it is part of the primary key for table [tk_adgroup]
+2021-10-08 09:28:43 DEBUG PrimaryKey:35 - Forcing column [ad_id] to be non-null as it is part of the primary key for table [tk_ad]
+2021-10-08 09:28:43 DEBUG SessionFactoryImpl:206 - Building session factory
+2021-10-08 09:28:43 DEBUG Settings:68 - SessionFactory name : null
+2021-10-08 09:28:43 DEBUG Settings:69 - Automatic flush during beforeCompletion(): enabled
+2021-10-08 09:28:43 DEBUG Settings:70 - Automatic session close at end of transaction: disabled
+2021-10-08 09:28:43 DEBUG Settings:72 - Statistics: disabled
+2021-10-08 09:28:43 DEBUG Settings:74 - Deleted entity synthetic identifier rollback: disabled
+2021-10-08 09:28:43 DEBUG Settings:75 - Default entity-mode: pojo
+2021-10-08 09:28:43 DEBUG Settings:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-10-08 09:28:43 DEBUG Settings:77 - Allow initialization of lazy state outside session : disabled
+2021-10-08 09:28:43 DEBUG Settings:79 - Using BatchFetchStyle : LEGACY
+2021-10-08 09:28:43 DEBUG Settings:80 - Default batch fetch size: -1
+2021-10-08 09:28:43 DEBUG Settings:81 - Maximum outer join fetch depth: null
+2021-10-08 09:28:43 DEBUG Settings:82 - Default null ordering: NONE
+2021-10-08 09:28:43 DEBUG Settings:83 - Order SQL updates by primary key: disabled
+2021-10-08 09:28:43 DEBUG Settings:84 - Order SQL inserts for batching: disabled
+2021-10-08 09:28:43 DEBUG Settings:86 - multi-tenancy strategy : NONE
+2021-10-08 09:28:43 DEBUG Settings:88 - JTA Track by Thread: enabled
+2021-10-08 09:28:43 DEBUG Settings:90 - Query language substitutions: {}
+2021-10-08 09:28:43 DEBUG Settings:91 - Named query checking : enabled
+2021-10-08 09:28:43 DEBUG Settings:93 - Second-level cache: disabled
+2021-10-08 09:28:43 DEBUG Settings:94 - Second-level query cache: disabled
+2021-10-08 09:28:43 DEBUG Settings:95 - Second-level query cache factory: null
+2021-10-08 09:28:43 DEBUG Settings:96 - Second-level cache region prefix: null
+2021-10-08 09:28:43 DEBUG Settings:97 - Optimize second-level cache for minimal puts: disabled
+2021-10-08 09:28:43 DEBUG Settings:98 - Structured second-level cache entries: disabled
+2021-10-08 09:28:43 DEBUG Settings:99 - Second-level cache direct-reference entries: disabled
+2021-10-08 09:28:43 DEBUG Settings:100 - Automatic eviction of collection cache: disabled
+2021-10-08 09:28:43 DEBUG Settings:102 - JDBC batch size: 15
+2021-10-08 09:28:43 DEBUG Settings:103 - JDBC batch updates for versioned data: enabled
+2021-10-08 09:28:43 DEBUG Settings:104 - Scrollable result sets: enabled
+2021-10-08 09:28:43 DEBUG Settings:105 - Wrap result sets: disabled
+2021-10-08 09:28:43 DEBUG Settings:106 - JDBC3 getGeneratedKeys(): enabled
+2021-10-08 09:28:43 DEBUG Settings:107 - JDBC result set fetch size: null
+2021-10-08 09:28:43 DEBUG Settings:108 - Connection release mode: AFTER_TRANSACTION
+2021-10-08 09:28:43 DEBUG Settings:109 - Generate SQL with comments: disabled
+2021-10-08 09:28:43 DEBUG Settings:111 - JPA compliance - query : disabled
+2021-10-08 09:28:43 DEBUG Settings:112 - JPA compliance - closed-handling : disabled
+2021-10-08 09:28:43 DEBUG Settings:113 - JPA compliance - lists : disabled
+2021-10-08 09:28:43 DEBUG Settings:114 - JPA compliance - transactions : disabled
+2021-10-08 09:28:43 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2021-10-08 09:28:43 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2021-10-08 09:28:43 DEBUG SessionFactoryImpl:268 - Session factory constructed with filter configurations : {}
+2021-10-08 09:28:43 DEBUG SessionFactoryImpl:269 - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, exec.mainClass=main.Main, java.specification.version=11, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=E:\program\java\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, exec.cleanupDaemonThreads=false, user.variant=, exec.args=8fc7854be9412a39df88a761e22461ab875696fe 6791983391823626245, java.vendor.url=https://openjdk.java.net/, user.timezone=Asia/Bangkok, maven.conf=E:\program\java\apache-maven-3.6.3\bin\../conf, os.name=Windows 10, java.vm.specification.version=11, current_session_context_class=thread, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.10\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher compile exec:java -Dexec.mainClass=main.Main -Dexec.cleanupDaemonThreads=false -Dexec.args=8fc7854be9412a39df88a761e22461ab875696fe 6791983391823626245, jdk.debug=release, maven.home=E:\program\java\apache-maven-3.6.3\bin\.., sun.cpu.endian=little, user.home=C:\Users\mkgia, user.language=en, sun.stderr.encoding=cp437, java.specification.vendor=Oracle Corporation, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, java.version.date=2021-01-19, java.home=C:\Program Files\Java\jdk-11.0.10, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, sun.stdout.encoding=cp437, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, user.script=, connection.password=H123, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.10+8-LTS-162, user.name=mkgia, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5432/ojt, connection.pool_size=5, file.encoding=Cp1252, guice.disable.misplaced.annotation.check=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=18.9, hibernate.current_session_context_class=thread, show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\mkgia\AppData\Local\Temp\, java.version=11.0.10, user.dir=D:\JavaP\OJT\tiktok-collector, os.arch=amd64, connection.username=postgres, maven.multiModuleProjectDirectory=D:\JavaP\OJT\tiktok-collector, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=org.postgresql.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@17b1daed, java.library.path=C:\Program Files\Java\jdk-11.0.10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.10\bin;E:\program\java\apache-tomcat-9.0.44\bin;E:\program\java\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\mkgia\AppData\Local\Microsoft\WindowsApps;C:\Users\mkgia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mkgia\AppData\Roaming\npm;C:\Users\mkgia\AppData\Local\GitHubDesktop\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.10+8-LTS-162, classworlds.conf=E:\program\java\apache-maven-3.6.3\bin\..\bin\m2.conf, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=5, library.jansi.path=E:\program\java\apache-maven-3.6.3\bin\..\lib\jansi-native, connection.url=jdbc:postgresql://localhost:5432/ojt, java.class.version=55.0}
+2021-10-08 09:28:43 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+2021-10-08 09:28:43 DEBUG SessionFactoryImpl:309 - Instantiated session factory
+2021-10-08 09:28:43 DEBUG TypeConfiguration$Scope:154 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@385d55aa] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@63821f9c]
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [model.Ad] is safe
+2021-10-08 09:28:43 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : model.Ad
+2021-10-08 09:28:44 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [model.Adgroup] is safe
+2021-10-08 09:28:44 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : model.Adgroup
+2021-10-08 09:28:44 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [model.Campaign] is safe
+2021-10-08 09:28:44 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : model.Campaign
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4000 - Static SQL for entity: model.Ad
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4005 -  Version select: select ad_id from tk_ad where ad_id =?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4008 -  Snapshot select: select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into tk_ad (ad_format, ad_name, ad_text, adgroup_id, adgroup_name, advertiser_id, app_name, campaign_id, campaign_name, opt_status, status, ad_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Update 0: update tk_ad set ad_format=?, ad_name=?, ad_text=?, adgroup_id=?, adgroup_name=?, advertiser_id=?, app_name=?, campaign_id=?, campaign_name=?, opt_status=?, status=? where ad_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from tk_ad where ad_id=?
+2021-10-08 09:28:44 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5fc787fe]
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : adFormat
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : adName
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : adText
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : adgroupId
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : adgroupName
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : advertiserId
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : appName
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : campaignId
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : campaignName
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : optStatus
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : status
+2021-10-08 09:28:44 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2021-10-08 09:28:44 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2021-10-08 09:28:44 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=model.Ad)
+    - Returns
+       - EntityReturnImpl(entity=model.Ad, querySpaceUid=<gen:0>, path=model.Ad)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=model.Ad)
+          - SQL table alias mapping - ad0_
+          - alias suffix - 0_
+          - suffixed key columns - {ad_id1_0_0_}
+
+2021-10-08 09:28:44 DEBUG EntityLoader:129 - Static select for entity model.Ad [NONE]: select ad0_.ad_id as ad_id1_0_0_, ad0_.ad_format as ad_forma2_0_0_, ad0_.ad_name as ad_name3_0_0_, ad0_.ad_text as ad_text4_0_0_, ad0_.adgroup_id as adgroup_5_0_0_, ad0_.adgroup_name as adgroup_6_0_0_, ad0_.advertiser_id as advertis7_0_0_, ad0_.app_name as app_name8_0_0_, ad0_.campaign_id as campaign9_0_0_, ad0_.campaign_name as campaig10_0_0_, ad0_.opt_status as opt_sta11_0_0_, ad0_.status as status12_0_0_ from tk_ad ad0_ where ad0_.ad_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4000 - Static SQL for entity: model.Adgroup
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4005 -  Version select: select adgroup_id from tk_adgroup where adgroup_id =?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4008 -  Snapshot select: select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into tk_adgroup (adgroup_name, advertiser_id, age, campaign_id, campaign_name, create_time, gender, languages, location, modify_time, opt_status, schedule_end_time, schedule_start_time, status, adgroup_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Update 0: update tk_adgroup set adgroup_name=?, advertiser_id=?, age=?, campaign_id=?, campaign_name=?, create_time=?, gender=?, languages=?, location=?, modify_time=?, opt_status=?, schedule_end_time=?, schedule_start_time=?, status=? where adgroup_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from tk_adgroup where adgroup_id=?
+2021-10-08 09:28:44 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@175a4c3c]
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : adgroupName
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : advertiserId
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : age
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : campaignId
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : campaignName
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : createTime
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : gender
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : languages
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : location
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : modifyTime
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : optStatus
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : scheduleEndTime
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : scheduleStartTime
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : status
+2021-10-08 09:28:44 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2021-10-08 09:28:44 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2021-10-08 09:28:44 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=model.Adgroup)
+    - Returns
+       - EntityReturnImpl(entity=model.Adgroup, querySpaceUid=<gen:0>, path=model.Adgroup)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=model.Adgroup)
+          - SQL table alias mapping - adgroup0_
+          - alias suffix - 0_
+          - suffixed key columns - {adgroup_1_1_0_}
+
+2021-10-08 09:28:44 DEBUG EntityLoader:129 - Static select for entity model.Adgroup [NONE]: select adgroup0_.adgroup_id as adgroup_1_1_0_, adgroup0_.adgroup_name as adgroup_2_1_0_, adgroup0_.advertiser_id as advertis3_1_0_, adgroup0_.age as age4_1_0_, adgroup0_.campaign_id as campaign5_1_0_, adgroup0_.campaign_name as campaign6_1_0_, adgroup0_.create_time as create_t7_1_0_, adgroup0_.gender as gender8_1_0_, adgroup0_.languages as language9_1_0_, adgroup0_.location as locatio10_1_0_, adgroup0_.modify_time as modify_11_1_0_, adgroup0_.opt_status as opt_sta12_1_0_, adgroup0_.schedule_end_time as schedul13_1_0_, adgroup0_.schedule_start_time as schedul14_1_0_, adgroup0_.status as status15_1_0_ from tk_adgroup adgroup0_ where adgroup0_.adgroup_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4000 - Static SQL for entity: model.Campaign
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4005 -  Version select: select campaign_id from tk_campaign where campaign_id =?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:4008 -  Snapshot select: select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into tk_campaign (advertiser_id, bid_type, budget, budget_mode, budget_optimize, campaign_name, create_time, modify_time, objective, objective_type, opt_status, optimize_goal, status, campaign_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Update 0: update tk_campaign set advertiser_id=?, bid_type=?, budget=?, budget_mode=?, budget_optimize=?, campaign_name=?, create_time=?, modify_time=?, objective=?, objective_type=?, opt_status=?, optimize_goal=?, status=? where campaign_id=?
+2021-10-08 09:28:44 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from tk_campaign where campaign_id=?
+2021-10-08 09:28:44 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f364eb0]
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : advertiserId
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : bidType
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : budget
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : budgetMode
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : budgetOptimize
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : campaignName
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : createTime
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : modifyTime
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : objective
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : objectiveType
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : optStatus
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : optimizeGoal
+2021-10-08 09:28:44 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : status
+2021-10-08 09:28:44 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2021-10-08 09:28:44 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2021-10-08 09:28:44 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=model.Campaign)
+    - Returns
+       - EntityReturnImpl(entity=model.Campaign, querySpaceUid=<gen:0>, path=model.Campaign)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=model.Campaign)
+          - SQL table alias mapping - campaign0_
+          - alias suffix - 0_
+          - suffixed key columns - {campaign1_2_0_}
+
+2021-10-08 09:28:44 DEBUG EntityLoader:129 - Static select for entity model.Campaign [NONE]: select campaign0_.campaign_id as campaign1_2_0_, campaign0_.advertiser_id as advertis2_2_0_, campaign0_.bid_type as bid_type3_2_0_, campaign0_.budget as budget4_2_0_, campaign0_.budget_mode as budget_m5_2_0_, campaign0_.budget_optimize as budget_o6_2_0_, campaign0_.campaign_name as campaign7_2_0_, campaign0_.create_time as create_t8_2_0_, campaign0_.modify_time as modify_t9_2_0_, campaign0_.objective as objecti10_2_0_, campaign0_.objective_type as objecti11_2_0_, campaign0_.opt_status as opt_sta12_2_0_, campaign0_.optimize_goal as optimiz13_2_0_, campaign0_.status as status14_2_0_ from tk_campaign campaign0_ where campaign0_.campaign_id=?
+2021-10-08 09:28:44 DEBUG SchemaManagementToolCoordinator:65 - No actions specified; doing nothing
+2021-10-08 09:28:44 DEBUG NamedQueryRepository:153 - Checking 0 named HQL queries
+2021-10-08 09:28:44 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+2021-10-08 09:28:44 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2021-10-08 09:28:44 DEBUG SessionFactoryRegistry:51 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@17ad01e1
+2021-10-08 09:28:44 DEBUG SessionFactoryRegistry:73 - Registering SessionFactory: 152ca937-02d0-4795-a14a-60468672f71a (<unnamed>)
+2021-10-08 09:28:44 DEBUG SessionFactoryRegistry:80 - Not binding SessionFactory to JNDI, no JNDI name configured
+2021-10-08 09:28:44 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+2021-10-08 09:28:44 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-10-08 09:28:44 DEBUG TransactionImpl:81 - begin
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:48 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:48 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:49 DEBUG SQL:144 - select campaign_.campaign_id, campaign_.advertiser_id as advertis2_2_, campaign_.bid_type as bid_type3_2_, campaign_.budget as budget4_2_, campaign_.budget_mode as budget_m5_2_, campaign_.budget_optimize as budget_o6_2_, campaign_.campaign_name as campaign7_2_, campaign_.create_time as create_t8_2_, campaign_.modify_time as modify_t9_2_, campaign_.objective as objecti10_2_, campaign_.objective_type as objecti11_2_, campaign_.opt_status as opt_sta12_2_, campaign_.optimize_goal as optimiz13_2_, campaign_.status as status14_2_ from tk_campaign campaign_ where campaign_.campaign_id=?
+2021-10-08 09:28:49 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:51 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:51 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:52 DEBUG SQL:144 - select adgroup_.adgroup_id, adgroup_.adgroup_name as adgroup_2_1_, adgroup_.advertiser_id as advertis3_1_, adgroup_.age as age4_1_, adgroup_.campaign_id as campaign5_1_, adgroup_.campaign_name as campaign6_1_, adgroup_.create_time as create_t7_1_, adgroup_.gender as gender8_1_, adgroup_.languages as language9_1_, adgroup_.location as locatio10_1_, adgroup_.modify_time as modify_11_1_, adgroup_.opt_status as opt_sta12_1_, adgroup_.schedule_end_time as schedul13_1_, adgroup_.schedule_start_time as schedul14_1_, adgroup_.status as status15_1_ from tk_adgroup adgroup_ where adgroup_.adgroup_id=?
+2021-10-08 09:28:52 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:54 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:54 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG SQL:144 - select ad_.ad_id, ad_.ad_format as ad_forma2_0_, ad_.ad_name as ad_name3_0_, ad_.ad_text as ad_text4_0_, ad_.adgroup_id as adgroup_5_0_, ad_.adgroup_name as adgroup_6_0_, ad_.advertiser_id as advertis7_0_, ad_.app_name as app_name8_0_, ad_.campaign_id as campaign9_0_, ad_.campaign_name as campaig10_0_, ad_.opt_status as opt_sta11_0_, ad_.status as status12_0_ from tk_ad ad_ where ad_.ad_id=?
+2021-10-08 09:28:55 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2021-10-08 09:28:55 DEBUG TransactionImpl:98 - committing
+2021-10-08 09:28:55 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2021-10-08 09:28:55 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2021-10-08 09:28:55 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 105 objects
+2021-10-08 09:28:55 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2021-10-08 09:28:55 DEBUG EntityPrinter:110 - Listing entities:
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1672765026369589, optimizeGoal=null, objectiveType=REACH, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=DISABLE, budgetOptimize=null, modifyTime=2020-08-27T14:50:21, budgetMode=BUDGET_MODE_DAY, createTime=2020-07-20T19:25:43, campaignName=Teresa_Reach_!, budget=50.0, status=CAMPAIGN_STATUS_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=ENABLE, adName=Video2020720_An Open Way, adId=1672771637902373, appName=null, campaignId=1672771577858085, adgroupId=1672771665767446, adgroupName=Ad Group20200720152704, adFormat=SINGLE_VIDEO, campaignName=Teresa_Reach_4, adText=creative text part 3, advertiserId=6791983391823626245, status=AD_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1674124755341333, optimizeGoal=null, objectiveType=REACH, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=DISABLE, budgetOptimize=null, modifyTime=2020-08-14T17:48:23, budgetMode=BUDGET_MODE_TOTAL, createTime=2020-08-04T19:36:56, campaignName=Reach20200804153605, budget=50.0, status=CAMPAIGN_STATUS_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=ENABLE, adName=v09033460000bqcm7d60bkbkq7rt3q50, adId=1675659915316229, appName=null, campaignId=1675659761569845, adgroupId=1675659915315221, adgroupName=Reach_5_Adgroup, adFormat=SINGLE_VIDEO, campaignName=Teresa_Reach_5, adText=texttttttttttttttt, advertiserId=6791983391823626245, status=AD_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=ENABLE, adName=IHM Radio App Install_2021-03-25 11:27:08, adId=1695218154305570, appName=iHeart: Radio, Music, Podcasts, campaignId=1695218209136674, adgroupId=1695218200748081, adgroupName=IHM App Install Test Ad Group, adFormat=SINGLE_VIDEO, campaignName=IHM App Install Test Campaign, adText=Download the iHeartRadio app today, advertiserId=6791983391823626245, status=AD_STATUS_DONE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Adgroup{gender=GENDER_UNLIMITED, languages=, campaignId=1699513776212018, advertiserId=6791983391823626245, scheduleStartTime=2021-05-11T22:22:42, optStatus=ENABLE, modifyTime=2021-09-21T10:01, createTime=2021-05-12T01:24:12, adgroupId=1699513776545809, adgroupName=Ad Group20210511212242, location=6252001, campaignName=Video Views20210511212239, age=AGE_18_24,AGE_25_34,AGE_35_44,AGE_45_54,AGE_55_100, scheduleEndTime=2021-10-16T02:22:42, status=ADGROUP_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=ENABLE, adName=[OPTIMIZER REGRESSION] Impressions Test, adId=1692951377889330, appName=, campaignId=1692951394653217, adgroupId=1692951392901170, adgroupName=[OPTIMIZER REGRESSION] Impressions Test, adFormat=SINGLE_VIDEO, campaignName=[OPTIMIZER REGRESSION] Impressions Test, adText=Quick and Easy for diet., advertiserId=6791983391823626245, status=AD_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Adgroup{gender=GENDER_UNLIMITED, languages=, campaignId=1674061430539317, advertiserId=6791983391823626245, scheduleStartTime=2020-08-04T03:38:53, optStatus=ENABLE, modifyTime=2020-09-16T04:15:17, createTime=2020-08-04T02:50:04, adgroupId=1674061430758406, adgroupName=[Saigon Green](Video View) Objective Check, location=1605651,6252001, campaignName=[Saigon Green](Video View) Objective Check, age=AGE_25_34, scheduleEndTime=2020-09-19T03:38:53, status=ADGROUP_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=ENABLE, adName=[OPTIMIZER REGRESSION] Media Budget Test_new, adId=1693935465923601, appName=, campaignId=1693935468014609, adgroupId=1693935465921569, adgroupName=[OPTIMIZER REGRESSION] Media Budget Test_new, adFormat=SINGLE_VIDEO, campaignName=[OPTIMIZER REGRESSION] Media Budget Test_new, adText=Confident with your outfits, advertiserId=6791983391823626245, status=AD_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1696477648877570, optimizeGoal=null, objectiveType=CONVERSIONS, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=ENABLE, budgetOptimize=null, modifyTime=2021-04-08T13:06:21, budgetMode=BUDGET_MODE_INFINITE, createTime=2021-04-08T13:06:21, campaignName=[Saigon](Conversion) iOS 14 check, budget=0.0, status=CAMPAIGN_STATUS_ENABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Adgroup{gender=GENDER_UNLIMITED, languages=ko, campaignId=1711095423090689, advertiserId=6791983391823626245, scheduleStartTime=2021-09-16T22:15:23, optStatus=DISABLE, modifyTime=2021-10-07T07:13:41, createTime=2021-09-16T21:30:34, adgroupId=1711095499718706, adgroupName=Ad Group20210916171523, location=6252001, campaignName=[OPTIMIZER REGRESSION] Impressions 2, age=AGE_18_24, scheduleEndTime=2021-10-16T22:15:23, status=ADGROUP_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Adgroup{gender=GENDER_UNLIMITED, languages=, campaignId=1673490220402742, advertiserId=6791983391823626245, scheduleStartTime=2020-07-28T20:16:30, optStatus=ENABLE, modifyTime=2020-07-29T22:07:11, createTime=2020-07-28T19:30:50, adgroupId=1673490223139845, adgroupName=Broad, location=6252001, campaignName=OptimizerTestBase, age=AGE_25_34,AGE_35_44,AGE_45_54,AGE_55_100, scheduleEndTime=2020-07-31T20:16:30, status=ADGROUP_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=ENABLE, adName=Video2020720_An Open Way, adId=1676187427601462, appName=null, campaignId=1672765026369589, adgroupId=1676187456693253, adgroupName=Ad Group20200720152104-1, adFormat=SINGLE_VIDEO, campaignName=Teresa_Reach_!, adText=aren't these walls nice?, advertiserId=6791983391823626245, status=AD_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Adgroup{gender=GENDER_UNLIMITED, languages=, campaignId=1673491283958806, advertiserId=6791983391823626245, scheduleStartTime=2020-07-28T20:31:47, optStatus=DISABLE, modifyTime=2020-08-07T14:09:46, createTime=2020-07-28T19:48:07, adgroupId=1673491315308566, adgroupName=AdGroup1, location=6252001, campaignName=OptimizerTestBase2, age=AGE_25_34,AGE_35_44, scheduleEndTime=2020-08-04T20:31:47, status=ADGROUP_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1675659761569845, optimizeGoal=null, objectiveType=REACH, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=DISABLE, budgetOptimize=null, modifyTime=2020-09-28T14:14:56, budgetMode=BUDGET_MODE_DAY, createTime=2020-08-21T18:18:54, campaignName=Teresa_Reach_5, budget=55.0, status=CAMPAIGN_STATUS_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=DISABLE, adName=[Saigon Green]{June 12 - June 14} Breaking Changes Monitoring, adId=1669280228768774, appName=null, campaignId=1669280228766758, adgroupId=1669280228767750, adgroupName=[Saigon Green]{June 12 - June 14} Breaking Changes Monitoring, adFormat=SINGLE_VIDEO, campaignName=[Saigon Green]{June 12 - Sep 19} Breaking Changes Monitoring, adText=Enjoy your weekend, advertiserId=6791983391823626245, status=AD_STATUS_CAMPAIGN_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1692951394653217, optimizeGoal=null, objectiveType=REACH, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=DISABLE, budgetOptimize=null, modifyTime=2021-09-21T10:09:14, budgetMode=BUDGET_MODE_DAY, createTime=2021-02-28T14:57:47, campaignName=[OPTIMIZER REGRESSION] Impressions Test, budget=50.0, status=CAMPAIGN_STATUS_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1685389349052433, optimizeGoal=null, objectiveType=CONVERSIONS, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=ENABLE, budgetOptimize=null, modifyTime=2020-12-07T03:42:16, budgetMode=BUDGET_MODE_DAY, createTime=2020-12-07T03:42:16, campaignName=Red-Conversions20201206222133, budget=50.0, status=CAMPAIGN_STATUS_ENABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Ad{optStatus=ENABLE, adName=[Saigon](Conversion) iOS 14 check, adId=1696477648881698, appName=, campaignId=1696477648877570, adgroupId=1696477648877586, adgroupName=[Saigon](Conversion) iOS 14 check, adFormat=SINGLE_VIDEO, campaignName=[Saigon](Conversion) iOS 14 check, adText=Casual Outfit, advertiserId=6791983391823626245, status=AD_STATUS_DONE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1711095423090689, optimizeGoal=null, objectiveType=REACH, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=DISABLE, budgetOptimize=null, modifyTime=2021-10-07T07:13:34, budgetMode=BUDGET_MODE_TOTAL, createTime=2021-09-16T21:30:33, campaignName=[OPTIMIZER REGRESSION] Impressions 2, budget=50.0, status=CAMPAIGN_STATUS_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:117 - model.Campaign{campaignId=1679094793540642, optimizeGoal=null, objectiveType=REACH, advertiserId=6791983391823626245, bidType=null, objective=LANDING_PAGE, optStatus=DISABLE, budgetOptimize=null, modifyTime=2021-03-16T13:13:33, budgetMode=BUDGET_MODE_TOTAL, createTime=2020-09-28T16:13:17, campaignName=Teresa_Reach_6, budget=800.0, status=CAMPAIGN_STATUS_DISABLE}
+2021-10-08 09:28:55 DEBUG EntityPrinter:114 - More......
+2021-10-08 09:28:55 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2021-10-08 09:28:55 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2021-10-08 09:28:55 DEBUG SessionFactoryImpl:808 - HHH000031: Closing
+2021-10-08 09:28:55 DEBUG TypeConfiguration$Scope:345 - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@16c839a1] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@63821f9c]
+2021-10-08 09:28:55 DEBUG AbstractServiceRegistryImpl:419 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2021-10-08 09:28:55 INFO  pooling:502 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/ojt]
+2021-10-08 09:28:55 DEBUG BootstrapServiceRegistryImpl:295 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

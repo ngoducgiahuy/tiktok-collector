@@ -43,7 +43,7 @@ public class HttpHelper {
 	}
 
 	public String buildUrl(String path) throws URISyntaxException {
-		URI uri = new URI("https", "business-api.tiktok.com", path, "", "");
+		URI uri = new URI("https", GlobalVariable.DOMAIN, path, "", "");
 		return uri.toString();
 	}
 }

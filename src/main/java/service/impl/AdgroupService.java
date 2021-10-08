@@ -18,11 +18,12 @@ import dto.AdgroupDto;
 import model.Adgroup;
 import service.AbstractService;
 import utils.FunctionHelper;
+import utils.GlobalVariable;
 
 public class AdgroupService extends AbstractService {
 
 	public JSONArray getDataAdgroup(String accessToken, Long advertiserId) {
-		String path = "/open_api/v1.2/adgroup/get/";
+		String path = GlobalVariable.ADGROUP_PATH;
 		List<String> fieldList = new ArrayList<String>();
 		fieldList.add("advertiser_id");
 		fieldList.add("campaign_id");
@@ -42,8 +43,7 @@ public class AdgroupService extends AbstractService {
 		return getListWithAllData(path, accessToken, advertiserId, fieldList);
 	}
 
-	public void importData(String accessToken, Long advertiserId, Session session)
-			throws JsonProcessingException {
+	public void importData(String accessToken, Long advertiserId, Session session) throws JsonProcessingException {
 		JSONArray resultList = this.getDataAdgroup(accessToken, advertiserId);
 		for (Object adgroup : resultList) {
 			AdgroupDto adgroupDto = convertToDto(adgroup);

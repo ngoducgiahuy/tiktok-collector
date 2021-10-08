@@ -17,11 +17,12 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import dto.AdDto;
 import model.Ad;
 import service.AbstractService;
+import utils.GlobalVariable;
 
 public class AdService extends AbstractService {
 
 	public JSONArray getDataAd(String accessToken, Long advertiserId) {
-		String path = "/open_api/v1.2/ad/get/";
+		String path = GlobalVariable.AD_PATH;
 		List<String> fieldList = new ArrayList<String>();
 		fieldList.add("advertiser_id");
 		fieldList.add("campaign_id");
@@ -38,8 +39,7 @@ public class AdService extends AbstractService {
 		return getListWithAllData(path, accessToken, advertiserId, fieldList);
 	}
 
-	public void importData(String accessToken, Long advertiserId, Session session)
-			throws JsonProcessingException {
+	public void importData(String accessToken, Long advertiserId, Session session) throws JsonProcessingException {
 		JSONArray resultList = this.getDataAd(accessToken, advertiserId);
 		for (Object ad : resultList) {
 			AdDto adDto = convertToDto(ad);
